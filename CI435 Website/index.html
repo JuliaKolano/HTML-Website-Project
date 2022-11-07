@@ -1,0 +1,409 @@
+<!doctype html><!--HTML5 doctype declaration -->
+<html lang="en"><!--default language of the document content -->
+	
+    <head>
+		<meta charset="utf-8"><!--character encoding for the document (Unicode) -->
+		<title>Learning Journal</title><!--web page title -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/stylesheet.css" rel="stylesheet /">
+		<link href="http://fonts.googleapis.com/css?family=Strait" rel="stylesheet">
+	</head>
+
+<body>
+<!--Markup all web page content inside the 'body' tags -->
+	<div id="wrapper">
+	<a id="top"></a>
+	<!--The 'wrapper' contains all the page content-->
+	
+    <header  class="banner"><!--The main heading for the page -->
+		<h1>Learning Journal for CI435</h1>
+		<h2 class="clear">Making a Responsive Website:</h2>
+	</header>
+	
+    <nav class="menu"><!--The primary navigation for the page -->
+	    <ul>
+		    <li><a href="index.html">Learning Journal</a></li>
+		    <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+	    </ul>
+	    <h2>Contents:</h2>
+	    <ul>
+	        <li><a href="#week1">Getting Started</a></li>
+	        <li><a href="#week2">Learning More HTML Elements</a></li>
+	        <li><a href="#week3">More HTML Markup</a></li>
+	        <li><a href="#week4">CSS Basics</a></li>
+	        <li><a href="#week5">Styling Text</a></li>
+	        <li><a href="#week6">Making a Responsive Webpage</a></li>
+	        <li><a href="#week7">Flexible Images</a></li>
+	        <li><a href="#References">References</a></li>
+	    </ul>
+	</nav>
+    
+    <main><!--The main page content -->
+        <aside>
+        <h2 class="timetable">My Timetable:</h2>
+            <table>
+                <tr>
+                    <th>Day/time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td>9-10am</td>
+                    <td>CI411 lecture</td>
+                    <td></td>
+                    <td>CI474 lab</td>
+                    <td></td>
+                    <td>CI465 tutorial</td>
+                </tr>
+                <tr>
+                    <td>10-11am</td>
+                    <td>CI435 lecture</td>
+                    <td>CI411 lab </td>
+                    <td>CI474 lab</td>
+                    <td></td>
+                    <td>CI465 tutorial</td>
+                </tr>
+                <tr>
+                    <td>11-12pm</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12-13pm</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>CI435 lab</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13-14pm</td>
+                    <td>CI465 lecture</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14-15pm</td>
+                    <td>CI465 lecture</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>CI410 lab</td>
+                </tr>
+                <tr>
+                    <td>15-16pm</td>
+                    <td>CI410 lecture</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </aside>
+        
+        <h2>Weekly Posts:</h2>
+        
+        <article>
+            <header class="post">
+                <a id="week7"></a>
+                <h3>Week 7: Flexible Images</h3>
+                <p class="date"> Published on <time datetime="2021-11-18"><strong>November 18, 2021</strong></time></p>
+            </header>
+            <p>After today's tutorial I have managed to create a separate webpage, in order to practice different techniques when including images on a website. And so, as the first example I created a full-sized clipped photo. I achieved this by using the <code>overflow</code> attribute and setting it to hidden, this means that as the viewport is resized, the image will get cropped and a part of it will dissapear from the viewport.</p>
+            <p>Secondly, I have also created a flexible photo. I did this with the <code>width</code> property and setting it to 100%, which means that the image will change its size when the viewport is resized, so that the whole image is displayed.</p>
+            <p>To take the second example further, I have also added text to the image as a third example. I've set the <code>width</code> attribute to 33%, so that when the viewport is resized, the image is always displayed on one thirds of the screen, and I've also set the <code>float</code> property to the left, so that the image stays on the left and the text always wraps around it on the right side.</p>
+            <p>Finally, as the last example, I've also made a flexible video conatiner. This was done by setting the <code>width</code> and <code>height</code> attributes to 100%, so that the whole video container is displayed as the viewport is resized.</p>
+            <p>Additionally, as a further reading for this week I have read the website called <a href="https://alistapart.com/article/fluid-images/">Fluid Images by Ethan Marcotte</a>. After reading the article I have found out that images can be restricted in their size to never be bigger than the container they were originally in, this is done by using the <code>max-width: 100%</code> rule in CSS. However, some older browsers don't support this rule, and therefore we have to use other methods to create fluid images in these kinds of browsers, including using the <code>width: 100%</code> rule or using JavaScript. As well as this, I read a <a href="https://en.wikipedia.org/wiki/Copyright">Wikipedia Webpage about Copyright</a>. And so according to Wikipedia, copyright is a type of intellectual property, which means that only the author of a certain creative property has the full access to that original property. So I need to be careful when chosing images for my website, and I need to make sure to find copyright-free images if I want to use them on the internet. Finally, I has a look at the <a href="https://creativecommons.org/">Creative Commons Website</a> as well. There, I've learned that creative commons licenses provide authors of creative property to be able to publish their work and provide certain rules for when other people want to access the property for their own use. So, the best idea for me is to find images under the creative commons licenses that let me use the pictures as long as the original author is referenced.</p>
+            <p>Therefore, this week I have learned the following skills:</p>
+            <ol>
+                <li>Creating a clipped full-size image</li>
+                <li>Creating a flexible image</li>
+                <li>Creating a flexible image with text wrapping</li>
+                <li>Creating a flexible video container</li>
+            </ol>
+            <figure>
+                <img src="images/Week7WebsiteProgress1.PNG" alt=" "/>
+                <figcaption>
+                    Example of a clipped image and a flexible image<br />
+                    <small> Screenshot &copy; Julia Kolano</small>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/Week7WebsiteProgress2.PNG" alt=" "/>
+                <figcaption>
+                    Exampele of a flexible image with text and a flexible video container<br />
+                    <small>Screenshot &copy; Julia Kolano</small>
+                </figcaption>
+            </figure>
+        </article>
+        
+        <article>
+            <header class="post">
+                <a id="week6"></a>
+                <h3>Week 6: Making a Responsive Webpage</h3>
+                <p class="date"> Published on <time datetime="2021-11-11"><strong>November 11, 2021</strong></time></p>
+            </header>
+            <p>After today's tutorial I have found out that it's important to sketch a layout of a webpage first, so that it can be easier to implement the design for the page later on. Therefore, after I had an idea of how I wanted to lay out my page, I added the <code>viewport meta</code> tag to make that my website displays on a phone in the same way I have designed it on a desktop. As well as that, I also added the <code>class</code> of banner to the <code>head</code> tag, so that I can style its navigation in CSS.</p>
+            <p>In order to make my website more responsive I used the <code>grid-area</code> property for my webpage depending on the screen widths. I did that so I can style the layout for 3 different scenarios: for small screens such as mobile phones, for medium-sized screens such as tablets, and for wide screens such as desktop computers. I have also decided that it would be better if I moved the 'go to top' anchor to the <code>footer</code> tag instead, because I thought that it would allign better with the grid layout I wanted to implement. For the same reason, I also changed the paragraph allignment to the left, instead of right, so it would allign better with the grid.</p>
+            <p>For the design of my website, I have decided to use the mobile first approach, so I started with styling everything vertically, using the <code>display</code> attribute and setting it to block. For small-screen devices I also used the <code>display</code> attribute, so that I could hide the timetable form the webpage because it wouldn't properly fit and allign on it. After I was done with the verical design of the webpage, I went onto designing it for the wide-screen devices and so I added a horizontal menu at the top of the page for the contents, using the <code>display</code> attribute and setting it to inline. And finally, I made the images flexible, so that they would size properly depending on the width of the page that it's viewed on.</p>
+            <p>Furthermore, as part of this week's reading I looked at the <a href="https://gridbyexample.com/">grid by example website</a>, which provided me with a lot of useful layouts that I could take inspiration from for my own webpage. I have also read the <a href="http://alistapart.com/article/responsive-web-design/">responsive web design article by Ethan Marcotte</a>. By reading through the article I have found out that web developers used to make different versions of websites for different devices, so that the pages would display properly and be easy to read. Howeve, nowadays we shouldn't do that, and instead we should make our websites more responsive and use media querries to change the layou of the webpages depending on the size of the screen. Additionally, after reading through the <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids">Developer Mozzila Webpage about grids</a> I have found out that the grid layouts for webpages are very useful for separating content into specific blocks around the page. It helps with the website being more responsive because the grids move around based on the available space. Finally, I also found the information on the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries">Developer Mozzila Webpage about media querries</a> useful because it explained that media querries help to apply different CSS elements to the webpage based on device characteristics and parameters, which helps with responsive web design.</p>
+            <p>Therefore, this week I have learned the following skills:</p>
+            <ol>
+                <li>Sketching wireframes of different width screen layouts</li>
+                <li>Adding the viewport meta element to the <code>head</code> of the document</li>
+                <li>Adjusting HTML if necessary</li>
+                <li>Organising the stylesheet</li>
+                <li>Setting up a responsive grid</li>
+                <li>Styling a small-screen layout</li>
+                <li>Styling for different screen widths using media querries</li>
+                <li>Hiding elements</li>
+                <li>Making images flexible</li>
+                <li>Testing responsive webpages</li>
+            </ol>
+            <figure>
+                <img src="images/Week6WebsiteProgress1.PNG" alt=" "/>
+                <figcaption>
+                    The look of the website after week 6<br />
+                    <small> Screenshot &copy; Julia Kolano</small>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/Week6WebsiteProgress2.PNG" alt=" "/>
+                <figcaption>
+                    Showcase of the addition of a banner class<br />
+                    <small>Screenshot &copy; Julia Kolano</small>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/Week6WebsiteProgress3.PNG" alt=" "/>
+                <figcaption>
+                    Showcase of moving the anchor to the footer<br />
+                    <small>Screenshot &copy; Julia Kolano</small>
+                </figcaption>
+            </figure>
+        </article>
+            
+        <article>
+            <header class="post">
+                <a id="week5"></a>
+                <h3>Week 5: Styling Text</h3>
+                <p class="date"> Published on <time datetime="2021-11-04"><strong>November 4, 2021</strong></time></p>
+            </header>
+            <p>After today's tutorial I have managed to add font fallbacks to the main fonts that I wanted to use on my page using CSS. I have also changed the font size of using em and rem measurements, instead of using pixels to make my webpage more scalable. Furthermore, I have also used google fonts, instead of default fonts used by the browser because they're online and so can be easily downloaded, which means the reader's of my website will be less restricted as of to what fonts they can see on my website.</p>
+            <p>Also, to make my website more readable, I have added more space in between the lines, using the line-height attribute. As well as making more space between the lines, I made bigger spaces in between individual paragraphs. Furthermore, to make the first paragraph of a section even more prominent, I decided that adding a dropcap to the first letter of the paraghraph would be a good idea.</p>
+            <p>Since, I wanted to be able to lay out the images on the page in the way that suited me, I used the float and clear properties. However, I have also used the clear class attribute in order for the logo on my page to wrap around the <code>h2</code> heading. And finally, I have realised that using the <code>p</code> markup for the HTML logo is bad practice, and so I changed it to a <code>div</code> tag instead.</p>
+            <p>Furthermore, as part of my further reading for this week, I have read the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">Developer Mozzila webpage about the box model</a>, which mentioned that all of the sectioned created by the block elements on the webpage have their own box area, that can be used to style them. I have found out that each box has a content, padding, border and margin edges. Therefore, having the knowledge of the box model will help me with fully utilising CSS to style paragraphs and other sections on my webpage. I have also read the  
+            <a href="https://developer.mozilla.org/en-US/Learn/CSS/Basic_text_styling_in_CSS">Developer Mozzila webpage about text and font styling </a>. From this page I have found out about the numerous CSS elements that can be used to style websites, such as the color, font and font families, shdows, layout, style and spacing. Lastly, I have also looked at the example of how to properly assign fonts from the 
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts">Developer Mozzila webpage about CSS fonts</a>.</p>
+            <p>Therefore, this week I have learned the following skills:</p>
+            <ol>
+                <li>Specifying font family with a fallback</li>
+                <li>Using web fonts, for example Google fonts</li>
+                <li>styling paragraphs using the height, margin, text-indent, dropcap, and text align attributes</li>
+            </ol>
+            <figure>
+                <img src="images/Week5WebsiteProgress1.PNG" alt=" "/>
+                <figcaption>
+                    The look of the website after week 5<br />
+                    <small> Screenshot &copy; Julia Kolano</small>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/Week5WebsiteProgress2.PNG" alt=" "/>
+                <figcaption>
+                    Showcase of the change from a p tag to a div tag<br />
+                    <small>Screenshot &copy; Julia Kolano</small>
+                </figcaption>
+            </figure>
+        </article>
+        
+        <article>
+            <header class="post">
+                <a id="week4"></a>
+                <h3>Week 4: CSS Basics</h3>
+                <p> Published on <time datetime="2021-10-28"><strong>October 28, 2021</strong></time></p>
+            </header>
+            <p>After today's lab, I managed to use the normalize.css stylesheet to help my browser render the elements on my webpage within the standards used on most of the sites. As well as using this stylesheet, I have also used and linked my own stylesheet to all of my webpages, which I have started to write in during this workshop. This was done so that I would be able to personalise the look of my website using CSS, rather than leave it with default settings for display.</p>
+            <p>As part of using CSS to style my webpages, I have decided to change the <code>h1</code> heading to a red colour so that it stands out from the rest of the text. I've done this as a mean of experimentation on my website, and I might change it during further workshops, so that my webpage is more pleasing to look at. I have also decided that I would convert the links, so that when a user of the website hovers over them, they would change colour, so that it's easier for them to tell which parts of the page are links, and which are plain text. Furthermore, as a cosmetic choice I have also decided to change the colour of the rest of the links, so that they would be easier on the eyes of the reader.</p>
+            <p>Since I used a table in my html from the last workshop, without the use of a stylesheet, I had to include CSS in my html, which produced an error when I tried to validate my code. However, now I have linked a stylesheet to my webpages, so I have moved that part of CSS into the stylesheet, instead of the html and managed to get rid of the error. Also, to improve the navigation of my webpage and make the weekly journal posts stand out, I have changed the colours of the headers of the articles to grey, using the <code>class</code> attribute, so that only the <code>h3</code> headers of the journal posts changed their styling, and not all of the other <code>h3</code> headers.</p>
+            <p>Finally, I have also customised the whole <code>body</code> section of the document, in such a way that the font was changed and the whole paged got centred towards the middle. I have done this so that my page is easier to read for the user of the website.</p>
+            <p>As part of my further reading for this week, I have read through the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS reference on the MDN Web Docs website</a>, which included the information about the rules of CSS and the proper syntax that should be used in the stylesheets. Furthermore, by readding this webpage, I have found out that there are different types of selectors. I have decided to use mainly the class and id selectors; the id selector can only be used once per page, however the class selector can be used multiple times, and it will work anytime it's called within the page. The website also mentions how multiple selectors can be grouped by using a comma between them. I have also found this website to be a good source of different CSS functions because it includes an index, so I can always come back to this website if I want a reminder of all of the functions available in CSS.</p>
+            <p>Therefore, this week I have learned the following skills: </p>
+            <ol>
+                <li>Using stylesheets and liking them to my webpages</li>
+                <li>Styling different elements of my webpage using CSS</li>
+                <li>Anchoring pseudo-classes</li>
+            </ol>
+            <figure>
+                <img src="images/Week4WebsiteProgress1.PNG" alt=" "/>
+                <figcaption>
+                    Final look of the website after week 4<br />
+                    <small> Screenshot &copy; Julia Kolano</small>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/Week4WebsiteProgress2.PNG" alt=" "/>
+                <figcaption>
+                    The piece of CSS in the main html, which doesn't exist anymore<br />
+                    <small>Screenshot &copy; Julia Kolano</small>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/Week4WebsiteProgress3.PNG" alt=" "/>
+                <figcaption>
+                    CSS used for the table, now moved to the stylesheet<br />
+                    <small>Screenshot &copy; Julia Kolano</small>
+                </figcaption>
+            </figure>
+        </article>
+        
+        <article>
+            <header class="post">
+                <a id="week3"></a>
+                <h3>Week 3: More HTML Markup</h3>
+                <p class="date"> Published on <time datetime="2021-10-21"><strong>October 21, 2021</strong></time>
+                </p>
+            </header>
+            <p>After today's lab, I have found out that it's possible to use nested lists on a webpage, and that it can add more structure to a page. However, I decided that I want to keep my layout more simple, not add nested lists because I believe my website doesn't require them at the moment. But I have gained useful knowledge about them, so I would be able to implement them in the future if I wanted to.</p>
+            <p> Furthermore, I have also created a table after the contents section on my website. I did this to include my time table as an additional part of my webpage. It doesn't directly link to the main part of the webpage, and so I wrapped it in an <code>aside</code> tag to make that clear.</p>
+            <p>Another useful thing that I have leaned today is the use of quotes on a webpage. Quotes are useful because it's possible to include some extra information on a page from external source, which are not written by the author of the page. The way I used the <code>blockquote</code> tag was to quote a definition from an external website about screen readers, so that whoever is reading the website can have a clear idea of what exactly screen readers are.</p>
+            <p>The last thing I have learned during the tutorial is how to link an image from an external source onto my wepsite. This is done using the <code>img</code> tag inside of the <code>a</code> tag. Using this knowledge I have added a link to the HTML logo close to the top of my website.</p>
+            <p>I have also done some further reading on the <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure">Mozilla webpage about document and website structure</a>. This website has helped me to correct some errors I have made on my wesite originally. For example I wanted to put the <code>aside</code> tag for the table I've made outside of the <code>main</code> tag, which after reading through the website I've found out it's bad practice. Therefore, I have corrected that, and now my websites navigation is much more clearer. Reading further into this website has also made me aware of the <code>br</code> tag. Before I knew about this tag, I have used the <code>p</code> tag to start a new line in the caption section below the pictures on my webpage. However, I now changed that to a <code>br</code> tag to create a new line, which is much better practice in this instance.</p>
+             <p>Another website I have used for further reading is the <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks">Mozilla webpage about creating hyperlinks</a>. From this website I have found out about the <code>title</code> attribute, which helps to add extra information about a hyperlink, so that the reader of the website can have a better idea of what is included in that hyperlink, and why they should or shouldn't click on it. This website also talked about the difference between the absolute and relative links, which helped me to understand when each of them should be used and how to properly use them. Also it mentioned about some errors that could occur if the location of a file changes when using the relative links, making me understand what to look out for when using this type of links.</p>
+             <p>The last reading I've done for this week was to gain more knowledge about screen readers. Therefore, I have found a definition on the <a href="https://abilitynet.org.uk/factsheets/introduction-screen-readers">Ability Net webpage</a> that states:</p>
+             <blockquote>
+                 <p>"A screen reader is a technology that helps people who have difficulties seeing to access and interact with digital content, like websites or applications via audio or touch."</p>
+            <footer>
+                <cite>
+                    <a href="https://abilitynet.org.uk/factsheets/introduction-screen-readers">AbilityNet</a>
+                </cite>
+            </footer>
+            </blockquote>
+            <p>The information on this website was very useful to me because it helped me understand how people with visual impairments access the internet, and so it helps me to develop my website in a way that would make it more accessible to different kinds of users.</p>
+            <p>Therefore, this week I have learned the following skills:</p>
+            <ol>
+                <li> Creating nested and definition lists </li>
+                <li> Adding a table to my learning journal</li>
+                <li> Quoting text using the <code>blockquote</code> tag</li>
+                <li> Making an image into an external link</li>
+            </ol>
+            <figure>
+                <img src="images/Week3WebsiteProgress1.PNG" alt=" "/>
+                <figcaption>
+                    Showcase of the HTML logo link and the timetable<br />
+                    <small> Screenshot &copy; Julia Kolano</small>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/Week3WebsiteProgress2.PNG" alt=" "/>
+                <figcaption>
+                    The look of the website after week 3<br />
+                    <small>Screenshot &copy; Julia Kolano</small>
+                </figcaption>
+            </figure>
+        </article>
+        
+        <article>
+            <header class="post">
+              <a id="week2"></a>
+              <h3>Week 2: Learning More HTML Elements</h3>
+              <p class="date"> Published on <time datetime="2021-10-14"><strong>October 14, 2021</strong></time></p>
+            </header>
+            <p>After today's tutorial I made my website's navigation slightly more responsive. I've done this by the use of anchors on my page ,I've put some anchors in the contents section and one anchor in the footer as well. This helped my website be faster and more intuitive to navigate. Also, I've made a use of lists and images,so that my webpage is more engaging for the reader and the information is organised in a more intuitive manner.</p>
+            <p> Furthermroe, I have done some more research on <a href="https://en.wikipedia.org/wiki/ISO_8601">Wikipedia</a>, so that I can find out more about the ISO 8601 standard format for using dates and time on webpages. This research ensures that I will have an indepth knowledge on how this format is used, and that I'll be able to implement it correctly to my website.</p>
+            <p>Another page that I have visited was the <a href="https://www.w3schools.com/html/html_blocks.asp">W3schools website</a>, which talked about the difference between inline and block elements and how they can be used on a webpage. This website has helped me make sure that I'm not making any mistakes when marking up my webpage, for example, so that I don't put block elements inside inline elements.</p>
+            <p>Therefore, this week I have learned the following skills: </p>
+            <ol>
+                <li> Adding a publication date to the articles on my website, using the ISO-8601 standard format</li>
+                <li> Putting an ordered list into the post</li>
+                <li> Craeting navigation within the page using anchors</li>
+                <li> Adding an image using the <code>img</code> tag</li>
+                <li> Linking emails to the page</li>
+            </ol>
+            <figure>
+                <img src="images/Week2WebsiteProgress1.PNG" alt=" "/>
+                <figcaption>
+                    The look of the website after week 2<br />
+                    <small>Screenshot &copy; Julia Kolano</small>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/Week2WebsiteProgress2.PNG" alt=" "/>
+                <figcaption>
+                    Showcase of extra navigation of the website<br />
+                    <small>Screenshot &copy; Julia Kolano</small>
+                </figcaption>
+            </figure>
+        </article>
+	
+    	<article>
+			<header class="post">
+			    <a id="week1"></a>
+			    <h3>Week 1: Getting Started</h3>
+			    <p class="date">Published on <time datetime="2021-10-07"><strong>October 7, 2021</strong></time></p>
+			</header>
+		    <p>After today's tutorial I have managed to create a basic 3-page website, which includes headings and subheadings, that add structure to the website. It also contains three links, two of them are going to be used fo the main navigation of the wensite and the other one was used as a reference to an external website.</p>	
+		    <p>Furthermore, for my further reading I used the <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#anatomy_of_an_html_document">Developer Mozzila Webpage</a>, in order to gain more knowledge on the proper markup of html, so that I would be able to give my website a well-structured look and avoid any unexpected mistakes in the future when updating my website.</p>
+		    <p>Therefore, this week I have learned the following skills: </p>
+		    <ol>
+                <li> Setting up a website folder and defining the site</li>
+                <li> Creating a learning journal home page</li>
+                <li> Linking pages together</li>
+                <li> Editting the page title and adding some extra content to the page</li>
+                <li> Using the <code>h1</code>, <code>h2</code>, <code>h3</code> tags in order to make headings and sub-headings</li>
+            </ol>
+            <figure>
+                <img src="images/Week1WebsiteProgress.PNG" alt=" "/>
+                <figcaption>
+                    The look of the website after week 1<br />
+                    <small>Screenshot &copy; Julia Kolano</small>
+                </figcaption>
+            </figure>
+		</article>
+           
+    </main><!--Close main page content --> 
+        
+        <aside>
+            <a id="References"></a>
+        	<h2>References: </h2>
+            	<ol>
+                	<li><a href="https://validator.w3.org/">W3C markup validation service</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#anatomy_of_an_html_document">Developer Mozzila Webpage about HTML markup</a></li>
+                    <li> <a href="https://en.wikipedia.org/wiki/ISO_8601">Wikipedia Page about the ISO 8601 standrad format</a></li>
+                    <li><a href="https://www.w3schools.com/html/html_blocks.asp">W3schools Webpage about block and inline elements</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure">Mozzila Webpage about document and website structure</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks">Mozilla Webpage about creating hyperlinks</a></li>
+                    <li><a href="https://abilitynet.org.uk/factsheets/introduction-screen-readers">Ability Net webpage about screen readers</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS reference on the MDN Web Docs website</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">Developer Mozzila webpage about the box model</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/Learn/CSS/Basic_text_styling_in_CSS">Developer Mozzila webpage about text and font styling</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts">Developer Mozzila webpage about CSS fonts</a></li>
+                    <li><a href="https://gridbyexample.com/">Grid by examples website</a></li>
+                    <li><a href="http://alistapart.com/article/responsive-web-design/">Responsive web design article by Ethan Marcotte</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids">Developer Mozzila Webpage about grids</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries">Developer Mozzila Webpage about media querries</a></li>
+                    <li><a href="https://alistapart.com/article/fluid-images/">Fluid Images by Ethan Marcotte</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Copyright">Wikipedia Webpage about Copyright</a></li>
+                    <li><a href="https://creativecommons.org/">Creative Commons Website</a></li>
+                </ol>
+        </aside>    
+        
+	<footer><!--Footer content -->
+	     <p><a href="#top">Go to top</a></p>
+	    <a href="mailto:j.kolano1@uni.brighton.ac.uk">Email Julia Kolano</a>
+	    <small>&copy; 2021, author.</small>
+	</footer>
+
+	</div><!--Close 'wrapper' div -->
+</body><!--Close 'body' -->
+</html><!--Close 'html' -->
